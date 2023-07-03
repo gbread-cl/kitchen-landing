@@ -1,0 +1,21 @@
+@import "App";
+
+.preferences-list{
+  margin: 20px 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.preference{
+  display: flex;
+  gap: 20px;
+  h3{
+    margin-top: 0;
+  }
+}
+.preference-image{
+  img{
+    height: 50px;
+  }
+}

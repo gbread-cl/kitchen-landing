@@ -1,0 +1,38 @@
+@import './App';
+
+.first-screen{
+  min-height: 100vh;
+  position: relative;
+  background: #f0f0f0 url("https://cdn.mos.cms.futurecdn.net/dnhPNSSUjTse2GrxHa9tck.jpg");
+  background-size: cover;
+
+}
+
+.first-screen__dark{
+  background: rgba(100, 100, 100, .7);
+  min-height: 100vh;
+}
+
+h1{
+  margin-top: 0;
+}
+
+.first-screen__overlay{
+  position: absolute;
+  left: 20%;
+  top: 30%;
+  max-width: 400px;
+  background-color: white;
+  padding: 30px;
+}
+
+.overlay-button{
+  margin-top: 40px;
+  a{
+    color: #fff;
+    background-color: $main-color;
+    display: inline;
+    padding: 10px 15px;
+    text-decoration: none;
+  }
+}
