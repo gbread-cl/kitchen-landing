@@ -13,3 +13,22 @@
   font-weight: 500;
 }
 
+.line-phone{
+  a{
+    text-decoration: none;
+    color: #fff;
+  }
+}
+
+@media only screen and (max-width: 768px){
+  .line{
+    display: block;
+  }
+  .line-text{
+    line-height: 24px;
+  }
+  .line-contacts{
+    text-align: center;
+    margin-top: 20px;
+  }
+}

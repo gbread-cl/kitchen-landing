@@ -13,6 +13,8 @@ export const Portfolio = () => {
 
     return (
         <section className="portfolio">
+            <SingleItem active={modalActive} setActive={setModalActive} item={state[modalIndex]} thumb={thumbnail}
+                        setThumb={setThumbnail}/>
             <div className="portfolio-wrap">
                 {state.map((el, index) => {
                     return (
@@ -32,8 +34,7 @@ export const Portfolio = () => {
                         </div>
                     )
                 })}
-                <SingleItem active={modalActive} setActive={setModalActive} item={state[modalIndex]} thumb={thumbnail}
-                            setThumb={setThumbnail}/>
+
             </div>
         </section>
     )

@@ -5,7 +5,7 @@
 }
 
 .portfolio-image {
-  max-height: 280px;
+  max-height: 215px;
   overflow: hidden;
   img {
     max-width: 100%;
@@ -47,4 +47,30 @@
   text-align: center;
   font-size: 36px;
   margin-top: 40px;
+}
+@media only screen and (max-width: 1200px){
+  .portfolio-image{
+    max-height: 190px;
+  }
+}
+
+@media only screen and (max-width: 992px){
+  .portfolio-image{
+    max-height: 190px;
+  }
+  .portfolio-wrap{
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media only screen and (max-width: 768px){
+  .portfolio-wrap{
+    display: block;
+  }
+  .portfolio-item{
+    margin-top: 20px;
+    &:first-child{
+      margin-top: 0;
+    }
+  }
 }

@@ -7,6 +7,11 @@ export const SingleItem = (props) => {
     return (
         <div className={props.active ? "single-item-container active" : "single-item-container"}
              onClick={() => props.setActive(false)}>
+            <div className="cross-wrap" onClick={() => props.setActive(false)}>
+                <div className="cross">
+
+                </div>
+            </div>
             <div className="single-item-wrap" onClick={(e) => e.stopPropagation()}>
                 <div className="single-item-left">
                     <div className="single-item-thumbnail">
@@ -51,7 +56,7 @@ export const SingleItem = (props) => {
                         </div>
                     </div>
                     <div className="single-item-button">
-                        <button>Обратный звонок</button>
+                        <button><a href="https://wa.me/79185456703">Оставить заявку</a></button>
                     </div>
                 </div>
             </div>

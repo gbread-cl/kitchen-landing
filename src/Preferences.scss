@@ -19,3 +19,13 @@
     height: 50px;
   }
 }
+
+@media only screen and (max-width: 768px){
+  .preferences-list{
+    display: block;
+  }
+  .preference{
+    margin: 10px 0;
+    padding: 0 10px;
+  }
+}
