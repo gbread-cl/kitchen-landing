@@ -1,0 +1,15 @@
+@import "App";
+
+.line{
+  display: flex;
+  justify-content: space-around;
+  background-color: $main-color;
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 700;
+  padding: 30px;
+}
+.line-contacts{
+  font-weight: 500;
+}
+

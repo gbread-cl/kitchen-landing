@@ -1,9 +1,19 @@
 .facade-wrap{
+  margin: 50px auto;
   display: grid;
-  gap: 20px;
   grid-template-columns: repeat(2, 1fr);
-  align-items: center;
+  gap: 40px
+}
+
+.facade-img{
+  display: inline-block;
   img{
     width: 100%;
+    padding-left: 40px;
   }
+}
+.facade-text{
+  display: inline-block;
+  padding: 40px;
+
 }

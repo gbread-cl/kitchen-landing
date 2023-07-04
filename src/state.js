@@ -23,4 +23,28 @@ export const state = [
         styles: "",
         images: ["/kitchens/kitchen-2.jpg"],
     },
+    {
+        name: "Кухня 4",
+        description: "",
+        styles: "",
+        images: ["/kitchens/kitchen-2.jpg"],
+    },
+    {
+        name: "Кухня 4",
+        description: "",
+        styles: "",
+        images: ["/kitchens/kitchen-2.jpg"],
+    },
+    {
+        name: "Кухня 4",
+        description: "",
+        styles: "",
+        images: ["/kitchens/kitchen-2.jpg"],
+    },
+    {
+        name: "Кухня 4",
+        description: "",
+        styles: "",
+        images: ["/kitchens/kitchen-2.jpg"],
+    },
 ]

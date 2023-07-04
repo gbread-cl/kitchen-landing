@@ -3,6 +3,9 @@ import {state} from "./state";
 import {useState} from "react";
 import {SingleItem} from "./SingleItem";
 
+//наполнить все карточки товаров
+//добавить кнопки влево-вправо
+
 export const Portfolio = () => {
     const [modalActive, setModalActive] = useState(false)
     const [modalIndex, setModalIndex] = useState(0)

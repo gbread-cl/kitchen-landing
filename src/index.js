@@ -7,6 +7,8 @@ import {MainScreen} from "./MainScreen";
 import {Preferences} from "./Preferences";
 import {Portfolio} from "./Portfolio";
 import {Facade} from "./Facade";
+import {Line} from "./Line";
+import {Order} from "./Order";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -14,8 +16,13 @@ root.render(
         <App/>
         <MainScreen/>
         <Preferences/>
+        <Line/>
+        <Order/>
+        <Line/>
         <Facade/>
         <Portfolio/>
+        <Line/>
+
     </React.StrictMode>
 );
 

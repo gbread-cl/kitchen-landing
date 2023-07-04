@@ -1,0 +1,35 @@
+@import "App";
+.order-wrap{
+  max-width: 1200px;
+  margin: 40px auto;
+
+  ol{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    list-style-type: none;
+    gap: 30px;
+    counter-reset: li;
+    li{
+      position: relative;
+      counter-increment: li;
+      &::before{
+        content: "0" counter(li);
+        position: absolute;
+        z-index: -1;
+        font-size: 64px;
+        font-weight: bold;
+        color: $main-color;
+        opacity: .8;
+        left: -25px;
+        top: -25px;
+      }
+      span{
+        font-weight: bold;
+        font-size: 24px;
+      }
+    }
+  }
+}
+.order-h2{
+  text-align: center;
+}
