@@ -15,7 +15,11 @@ export const SingleItem = (props) => {
                     <div className="single-item-list">
                         {props.item.images.map((el, index) => {
                             return (
-                                <div onClick={() => props.setThumb(el)}>
+                                <div onClick={(e) => {
+                                    props.setThumb(el)
+                                    document.querySelectorAll('.selected')?.forEach(el => el.classList.remove('selected'))
+                                    e.target.classList.add('selected')
+                                }}>
                                     <img alt="kitchen-image" src={el}/>
                                 </div>
                             )
@@ -29,7 +33,20 @@ export const SingleItem = (props) => {
                                 {props.item.name}
                             </h2>
                         </div>
+                        <div className="single-item-char">
+                            <h3>Характеристики</h3>
+                            <ul>
+
+                                {props.item.characteristics.map((el) => {
+                                    return (
+                                        <li>{el}</li>
+                                    )
+                                })}
+
+                            </ul>
+                        </div>
                         <div className="single-item-description">
+                            <h3>Описание</h3>
                             {props.item.description}
                         </div>
                     </div>

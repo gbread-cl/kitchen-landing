@@ -35,14 +35,14 @@
 .single-item-list{
   margin-top: 10px;
   overflow: hidden;
-  height: 60px;
   display: flex;
-  align-items: stretch;
+  align-items: center;
+  height: 70px;
   gap: 10px;
   img{
     cursor: pointer;
     width: 60px;
-    height: 100%;
+    height: 60px;
   }
 }
 .single-item-thumbnail{
@@ -75,6 +75,12 @@
     padding: 10px;
   }
 
+}
+
+.selected{
+  box-sizing: content-box;
+  position: relative;
+  border: 2px #555 solid;
 }
 
 .single-item-right{

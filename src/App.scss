@@ -4,6 +4,7 @@ $main-font: 'Poppins', sans-serif;
 
 *{
   font-family: $main-font;
+  box-sizing: border-box;
 }
 
 h2{
